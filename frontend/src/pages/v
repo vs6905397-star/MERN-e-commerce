@@ -1,0 +1,17 @@
+{order.products.map((item) => (
+              <div>
+                 <div className="flex py-4 first:pt-0 last:pb-0 items-center justify-between">
+                <div className="flex items-center space-x-4">
+                  {/* Image Placeholder */}
+                  <div className="h-16 w-16 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 overflow-hidden shrink-0">
+                    <span className="text-xl">🎧</span>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-medium text-slate-200">{item.product?.title}</h4>
+                    <p className="text-xs text-slate-400 mt-0.5">Qty: {item.quantity}• Midnight Black</p>
+                  </div>
+                </div>
+                <p className="text-sm font-medium text-slate-200">{item.product.price}</p>
+              </div>
+            </div>            
+             ))}
