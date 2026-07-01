@@ -20,11 +20,13 @@ const Login = () => {
         email,
         password,
       })
+      alert("login successfully");
       navigate("/");
       setUser(await getCurrentUser());
 
     } catch (error) {
       console.log(error);
+      alert("information are incorrect plese check again");
     }
   };
 

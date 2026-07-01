@@ -11,13 +11,14 @@ export default function UserProfile() {
   const {setUser} = useAuth();
 
   const handleLogout = async ()=>{
-    try {
+    if (window.confirm('Kya aapko sach me logout karna hai?')){
+      try {
       await logout();
-
       navigate("/login");
 
     } catch (error) {
       console.log(error);
+    }
     }
   };
 

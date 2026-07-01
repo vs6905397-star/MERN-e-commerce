@@ -21,10 +21,12 @@ const Signup = () => {
         password,
       });
 
+      alert("Singup successfully");
       navigate("/login");
 
     } catch (error) {
       console.log(error);
+      alert("something is incorrect");
     }
   };
 
