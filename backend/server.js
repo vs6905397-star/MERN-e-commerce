@@ -15,7 +15,7 @@ import path from "path"
 
 const app = express()
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://mern-e-commerce-frontend-1pi7.onrender.com",
     credentials:true
 }));
 
